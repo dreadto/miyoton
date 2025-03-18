@@ -1,0 +1,98 @@
+---
+proxies:
+  - name: Amazon.com WS TLS
+    server: nautica.foolvpn.me
+    port: 443
+    type: vless
+    uuid: eebb3d05-0e1f-4ca3-8aff-ba5d6e33cdfb
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: support.zoom.us.nautica.foolvpn.me
+    network: ws
+    ws-opts:
+      path: /43.218.77.16-1443
+      headers:
+        Host: support.zoom.us.nautica.foolvpn.me
+    udp: true
+  - name: wijaya-Trojan - ws
+    server: wid-1.serversantech.my.id
+    port: 443
+    type: trojan
+    password: P2pj92dHmokLWgfeCnTX3Q
+    skip-cert-verify: true
+    sni: support.zoom.us.nautica.foolvpn.me
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: support.zoom.us.nautica.foolvpn.me
+    udp: true
+  - name: wijaya-Trojan - grpc
+    server: wid-1.serversantech.my.id
+    port: 443
+    type: trojan
+    password: P2pj92dHmokLWgfeCnTX3Q
+    skip-cert-verify: true
+    sni: support.zoom.us.nautica.foolvpn.me
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-service
+    udp: true
+  - name: biznet- VLESS - ws
+    server: support.zoom.us.nautica.foolvpn.me
+    port: 443
+    type: vless
+    uuid: 07a61e68-4c1a-4a51-9e10-042fe1ffee51
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: biz-2.serversantech.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: biz-2.serversantech.my.id
+    udp: true
+  - name: biznet- VLESS - grpc
+    server: biz-2.serversantech.my.id
+    port: 443
+    type: vless
+    uuid: 07a61e68-4c1a-4a51-9e10-042fe1ffee51
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: support.zoom.us.nautica.foolvpn.me
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-service
+    udp: true
+  - name: SGDO [VLESS - ws] TLS
+    server: sgdo-2.koneksiku.cloud
+    port: 443
+    type: vless
+    uuid: 00bf5440-8e75-404e-bb64-313c09619d24
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: support.zoom.us.nautica.foolvpn.me
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: support.zoom.us.nautica.foolvpn.me
+    udp: true
+  - name: SGDO [VLESS - grpc] TLS
+    server: sgdo-2.koneksiku.cloud
+    port: 443
+    type: vless
+    uuid: 00bf5440-8e75-404e-bb64-313c09619d24
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: support.zoom.us.nautica.foolvpn.me
+    network: grpc
+    grpc-opts:
+      grpc-service-name: vless-service
+    udp: true
+  
